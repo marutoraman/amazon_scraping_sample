@@ -12,6 +12,7 @@ def set_driver(is_headless: bool=False):
         options.add_argument('--headless')
         
     options.add_argument('--user-agent=' + HEADER_USER_AGENT)
+    options.add_argument('log-level=3') 
     options.add_argument('--ignore-certificate-errors')
     options.add_argument('--ignore-ssl-errors')
     options.add_argument('--incognito')          # シークレットモードの設定を付与

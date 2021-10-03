@@ -11,7 +11,7 @@ def run(url: str, limit:int=50):
     df = pd.DataFrame()
     for item in items:
         df = df.append(item.__dict__, ignore_index=True).fillna("")
-    df.to_csv("./export_items.csv", encoding="utf-8_sig", columns=["name", "asin", "price", "star", "description"])
+    df.to_csv("./exp_data.csv", encoding="utf-8_sig", columns=["name", "asin", "price", "star", "description"])
 
 
 if __name__ == "__main__":
